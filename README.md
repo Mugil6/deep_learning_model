@@ -45,7 +45,6 @@ The model detects obstacles such as cars, people, and vehicles from aerial video
 
 ## Installation and Setup
 
-1️⃣ Create and activate a virtual environment
 # Create environment
 python -m venv venv
 
@@ -54,13 +53,16 @@ source venv/bin/activate    # Linux / Mac
 venv\Scripts\activate       # Windows
 
 
-2️⃣ Install dependencies
-pip install -r requirements.txt
 
-3️⃣ Train the model
+# Install dependencies
+python -m venv venv
+
+# Train the model
 python train/train.py
-4️⃣ Run inference / testing
+
+# Run inference/ testing
 python src/drone_navigation.py
+
 
 
 
