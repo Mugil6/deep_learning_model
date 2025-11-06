@@ -1,0 +1,61 @@
+# 🚀 Deep Learning Project – Automatic Drone Navigation using YOLOv8
+
+## 👥 Group Information
+- **Course:** Deep Learning (CSLxxxx)
+- **Project Title:** Design a Deep Learning Model for Automatic Drone Navigation
+- **Group ID:** 62
+- **Members:**
+  - [Manisha Bhalla, M25DE1050]
+  - [Umang Garg, M25DE1062.]
+  - [Sayan Chakraborty, M25DE1044]
+  - [Mugilan M, M25DE1022]
+
+---
+
+## 📘 Overview
+This project implements an **object detection-based drone navigation system** using **YOLOv8 (Ultralytics)**, built on **PyTorch**.  
+The model detects obstacles such as cars, people, and vehicles from aerial videos to support autonomous navigation decisions.
+
+---
+
+## 🧠 Model Description
+- **Model Architecture:** YOLOv8n (pre-trained on COCO subset)
+- **Framework:** PyTorch
+- **Task:** Object Detection for Drone Navigation
+- **Training Dataset:** COCO128 (subset of COCO)
+- **Training Epochs:** 20  
+- **Image Size:** 416×416  
+- **Output Classes:** Standard COCO objects (vehicles, persons, etc.)
+
+---
+
+## ⚙️ Folder Descriptions
+
+| Folder/File | Description |
+|--------------|-------------|
+| `train/train.py` | Training script for YOLO model using COCO128 subset |
+| `src/drone_navigation.py` | Main inference + visualization script for object detection |
+| `models/best.pt` | Trained YOLOv8 model weights |
+| `input/test_2.mp4` | Sample input video |
+| `output/` | Folder containing detected output video and plots |
+| `requirements.txt` | Python dependencies |
+| `instructions.txt` | Dataset download & preprocessing steps |
+
+---
+
+## Installation and Setup
+
+### 1️⃣ Create and activate environment
+```bash
+python -m venv venv
+source venv/bin/activate  # for Linux/Mac
+venv\Scripts\activate     # for Windows
+
+### 2 Install Dependencies
+pip install -r requirements.txt
+## 3 Train 
+python train/train.py
+## 4 Testing
+python src/drone_navigation.py
+
+
