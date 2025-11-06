@@ -50,6 +50,7 @@ python -m venv venv
 
 # Activate (choose based on OS)
 source venv/bin/activate    # Linux / Mac
+
 venv\Scripts\activate       # Windows
 
 
